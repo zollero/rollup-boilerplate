@@ -1,5 +1,5 @@
 
-// import uglify from 'rollup-plugin-uglify'
+import uglify from 'rollup-plugin-uglify'
 import resolve from 'rollup-plugin-node-resolve';
 import json from 'rollup-plugin-json';
 import babel from 'rollup-plugin-babel';
@@ -22,8 +22,8 @@ export default {
         babel({
           exclude: 'node_modules/**'
         }),
-        json()
-        // uglify()
+        json(),
+        uglify()
     ],
     // indicate which modules should be treated as external
     // external: ['lodash']
