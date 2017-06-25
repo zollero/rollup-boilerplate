@@ -5,7 +5,7 @@ class Customer {
     }
 
     sayHi() {
-        console.log(this.name)
+        console.log(`The name is: ${this.name}`)
     }
 }
 
