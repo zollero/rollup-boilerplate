@@ -4,8 +4,6 @@ import resolve from 'rollup-plugin-node-resolve';
 import json from 'rollup-plugin-json';
 import babel from 'rollup-plugin-babel';
 
-// import _ from 'lodash';
-
 
 export default {
     entry: 'src/main.js',
@@ -24,7 +22,5 @@ export default {
         }),
         json(),
         uglify()
-    ],
-    // indicate which modules should be treated as external
-    // external: ['lodash']
+    ]
 }
