@@ -22,7 +22,5 @@ export default {
         }),
         json(),
         uglify()
-    ],
-    //indicate which modules should be treated as external
-    external: ['lodash']
+    ]
 }
